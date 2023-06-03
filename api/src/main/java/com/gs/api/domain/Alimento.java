@@ -25,8 +25,9 @@ public class Alimento {
     @CreatedDate
     @Temporal(TemporalType.DATE)
     private LocalDate dataDoacao;
-    @Column(name = "tags_alimentos", columnDefinition = "CLOB")
     @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "alimentos_tags", joinColumns = @JoinColumn(name = "alimentos_id_alimento"))
+    @Column(name = "tag")
     private List<String> tags;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "restaurante_doador_id", nullable = false)

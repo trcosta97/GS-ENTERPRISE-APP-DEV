@@ -28,7 +28,7 @@ public class AlimentoService {
     }
 
     public List<Alimento> todosAlimentosAtivos(){
-        Sort sort = Sort.by("dataCadastro").descending();
+        Sort sort = Sort.by("dataDoacao").descending();
         return alimentoRepository.findAllByAtivoTrue(sort);
     }
 
