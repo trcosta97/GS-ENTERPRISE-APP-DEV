@@ -22,22 +22,22 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_usuario")
     private Long id;
-    @Column(name = "nome_usuario")
+    @Column(name = "nome_usuario", nullable= false)
     private String nome;
-    @Column(name = "email_usuario")
+    @Column(name = "email_usuario", nullable= false)
     private String email;
-    @Column(name = "senha_usuario")
+    @Column(name = "senha_usuario", nullable= false)
     private String senha;
-    @Column(name = "cnpj_usuario")
+    @Column(name = "cnpj_usuario", nullable= false)
     private String cnpj;
-    @JoinColumn(name = "id_endereco")
+    @JoinColumn(name = "id_endereco", nullable= false)
     @OneToOne(cascade = CascadeType.ALL)
     @JsonManagedReference
     private EnderecoUsuario enderecoUsuario;
-    @Column(name = "data_cadastro")
+    @Column(name = "data_cadastro", nullable= false)
     @Temporal(TemporalType.DATE)
     private LocalDate dataCadastro;
-    @Column(name = "usuario_ativo", columnDefinition = "BIT(1) DEFAULT 1")
+    @Column(name = "usuario_ativo", columnDefinition = "BIT(1) DEFAULT 1", nullable= false)
     private Boolean ativo = true;
 
     public Usuario(UsuarioDTO dados) {

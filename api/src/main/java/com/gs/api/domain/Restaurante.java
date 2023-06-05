@@ -22,20 +22,18 @@ public class Restaurante {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_restaurante")
     private Long id;
-    @Column(name = "nome_restaurante")
+    @Column(name = "nome_restaurante", nullable= false)
     private String nome;
-    @Column(name = "email_restaurante")
+    @Column(name = "email_restaurante", nullable= false)
     private String email;
-    @Column(name = "senha_restaurante")
+    @Column(name = "senha_restaurante", nullable= false)
     private String senha;
-    @Column(name = "cnpj_restaurante")
+    @Column(name = "cnpj_restaurante", nullable= false)
     private String cnpj;
-    @JoinColumn(name = "id_endereco")
+    @JoinColumn(name = "id_endereco", nullable= false)
     @OneToOne(cascade = CascadeType.ALL)
     @JsonManagedReference
     private EnderecoRestaurante enderecoRestaurante;
-//    @OneToMany(mappedBy = "restauranteDoador", cascade = CascadeType.ALL)
-//    private List<Alimento> alimentos;
     @Column(name = "data_cadastro", updatable = false)
     @Temporal(TemporalType.DATE)
     private LocalDate dataCadastro;

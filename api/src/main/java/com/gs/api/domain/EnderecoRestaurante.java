@@ -33,7 +33,7 @@ public class EnderecoRestaurante {
     @OneToOne(mappedBy = "enderecoRestaurante")
     @JsonBackReference
     private Restaurante restaurante;
-    @Column(name = "endereco_ativo", columnDefinition = "BIT(1) DEFAULT 1")
+    @Column(name = "endereco_ativo", columnDefinition = "BIT(1) DEFAULT 1", , nullable= false)
     private Boolean ativo;
 
     public void desativarEndereco(){

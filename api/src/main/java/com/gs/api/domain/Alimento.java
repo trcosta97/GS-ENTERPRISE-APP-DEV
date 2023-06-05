@@ -21,13 +21,13 @@ public class Alimento {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_alimento")
     private Long id;
-    @Column(name = "data_doacao")
+    @Column(name = "data_doacao", nullable= false)
     @CreatedDate
     @Temporal(TemporalType.DATE)
     private LocalDate dataDoacao;
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "alimentos_tags", joinColumns = @JoinColumn(name = "alimentos_id_alimento"))
-    @Column(name = "tag")
+    @Column(name = "tag", , nullable= false)
     private List<String> tags;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "restaurante_doador_id", nullable = false)

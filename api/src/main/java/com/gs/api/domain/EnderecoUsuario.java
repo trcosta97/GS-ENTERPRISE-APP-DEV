@@ -33,7 +33,7 @@ public class EnderecoUsuario {
     @OneToOne(mappedBy = "enderecoUsuario")
     @JsonBackReference
     private Usuario usuario;
-    @Column(name = "endereco_ativo", columnDefinition = "BIT(1) DEFAULT 1")
+    @Column(name = "endereco_ativo", columnDefinition = "BIT(1) DEFAULT 1", , nullable= false)
     private Boolean ativo = true;
 
 
