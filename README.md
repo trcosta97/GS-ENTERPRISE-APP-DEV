@@ -356,7 +356,7 @@ public List<Usuario> buscarUsuariosPorUF(Uf uf) {
 
 ## Lista de ENDPOINTS:  
 
-#### POST /usuarios
+### POST /usuarios
 Endpoint responsável pelo cadastro de novos usuário. Contém validação de email (precisa conter "@") e de CNPJ (14 digitos).  
 *Json*:  
   ```console
@@ -375,11 +375,11 @@ Endpoint responsável pelo cadastro de novos usuário. Contém validação de em
 }
  ```
 
-#### POST /usuarios/login  
+### POST /usuarios/login  
 Endpoint responsável pelo login de usuários. Não funciona pede um *json*, mas sim 2 parametros: email e senha, e busca no banco por usuários cadastrados com o mesmo login e senha informados.  
 
 
-#### POST /restaurantes/  
+### POST /restaurantes/  
 Endpoint responsável pelo cadastro de novos usuário. Contém validação de email (precisa conter "@") e de CNPJ (14 digitos).  
 *Json*:  
   ```console
@@ -397,17 +397,17 @@ Endpoint responsável pelo cadastro de novos usuário. Contém validação de em
   }  
 }  
   ```
-#### POST /restaurantes/login  
+### POST /restaurantes/login  
 Endpoint responsável pelo login de restaurantes. Não funciona pede um *json*, mas sim 2 parametros: email e senha, e busca no banco por restaurantes cadastrados com o mesmo login e senha informados.  
 
 
-#### GET /restaurantes  
+### GET /restaurantes  
 Endpoint que retorna lista com todos os restaurantes listados por ordem de cadastro. Não pede *json*, pede dois parametros: email (*String*) e senha (*String*).  
 
-#### GET /restaurantes/busca  
+### GET /restaurantes/busca  
 Endpoint que retorna restaurante a partir do nome. Não pede *json*, pede o parametro nome (*String*)
 
-#### POST /alimentos  
+### POST /alimentos  
 Endpoint responsável pelo cadastro de alimentos. Recebe o id do restaurante que faz a doação e uma lista de strings com os alimentos.  
 *Json*:  
   ```console
@@ -419,10 +419,16 @@ Endpoint responsável pelo cadastro de alimentos. Recebe o id do restaurante que
 }
 ```
 
-#### GET /alimentos  
+### GET /alimentos  
 Endpoint que retorna lista com todos os alimentos listados por ordem de cadastro. Não pede *json*.  
 
 
-#### DELETE /alimentos  
+### DELETE /alimentos  
 Endpoint responsável pela exclusão lógica de alimentos. Usado assim que um alimentos é escolhido por um usuário. Muda o atributo *ativo* do alimento de *true* pra *false*. Não necessita de *json*, recebe um paramentro *Id* (*Long*).  
+
+## Vídeo explcativo
+
+https://youtu.be/r59V-HrQtII
+
+
 
