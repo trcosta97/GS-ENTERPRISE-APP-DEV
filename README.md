@@ -428,7 +428,7 @@ Endpoint responsável pela exclusão lógica de alimentos. Usado assim que um al
 
 ##Vídeo Explicativo
 
-[[https://youtu.be/r59V-HrQtII](https://youtu.be/2SMXKWx_bWg)](https://youtu.be/r59V-HrQtII)
+(https://youtu.be/r59V-HrQtII)
 
 
 
