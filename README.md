@@ -1,4 +1,4 @@
-# Global Solution 2023/1 - Enterprise Application Development - FoodHelp
+# Global Solution 2023/1 - DevOps - FoodHelp
 
 ## Sobre o projeto:
 
