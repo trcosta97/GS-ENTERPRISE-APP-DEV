@@ -1,4 +1,4 @@
-# Global Solution 2023/1 - DEVOPS TOOLS & CLOUD COMPUTING - FoodHelp
+# Global Solution 2023/1 - ENTERPRISE APPLICATION DEVELOPMENT - FoodHelp
 
 ## Sobre o projeto:
 
@@ -426,9 +426,9 @@ Endpoint que retorna lista com todos os alimentos listados por ordem de cadastro
 ### DELETE /alimentos  
 Endpoint responsável pela exclusão lógica de alimentos. Usado assim que um alimentos é escolhido por um usuário. Muda o atributo *ativo* do alimento de *true* pra *false*. Não necessita de *json*, recebe um paramentro *Id* (*Long*).  
 
-## Acessando a partir de uma VM:
+##Vídeo Explicativo
 
-[https://youtu.be/r59V-HrQtII](https://youtu.be/2SMXKWx_bWg)
+[[https://youtu.be/r59V-HrQtII](https://youtu.be/2SMXKWx_bWg)](https://youtu.be/r59V-HrQtII)
 
 
 
