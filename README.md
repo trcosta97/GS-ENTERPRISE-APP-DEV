@@ -1,4 +1,4 @@
-# Global Solution 2023/1 - DevOps - FoodHelp
+# Global Solution 2023/1 - DEVOPS TOOLS & CLOUD COMPUTING - FoodHelp
 
 ## Sobre o projeto:
 
