@@ -47,6 +47,9 @@ problemas de logística.
 
 ## Instalação e execução da API
 
+### Vídeo Explicativo
+(https://youtu.be/r59V-HrQtII)
+
 A API foi desenvolvida usando  Java 17 e com o framework Spring + Gradle e banco de dados relacional Oracle SQL.
 O primeiro passo é buildar a aplicação. Abra um prompt de comando na pasta raiz do projeto e execute o comando:
 ```console
@@ -59,6 +62,7 @@ O próximo passo é executar o método Main presente na classe ApiApplication qu
 O projeto contém um swagger, que é um console que roda junto com o programa e serve para testes. Ele oferece uma interface gráfica html com todos os endpoints e seus respectivos *json* formatados já com o os campos necesários para cada endpoint e o tipo de dado que ele precisa.
 
 A configuração do banco de dados é feita pelo arquivo application.properties. Lá é possível que mudar o login, senha e endereço do seu banco de dados Oracle.  
+
 
 ## Mapemanto JPA
 
@@ -426,9 +430,6 @@ Endpoint que retorna lista com todos os alimentos listados por ordem de cadastro
 ### DELETE /alimentos  
 Endpoint responsável pela exclusão lógica de alimentos. Usado assim que um alimentos é escolhido por um usuário. Muda o atributo *ativo* do alimento de *true* pra *false*. Não necessita de *json*, recebe um paramentro *Id* (*Long*).  
 
-##Vídeo Explicativo
-
-(https://youtu.be/r59V-HrQtII)
 
 
 
